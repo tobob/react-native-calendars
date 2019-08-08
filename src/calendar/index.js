@@ -137,6 +137,7 @@ class Calendar extends Component {
   }
 
   _handleDayInteraction(date, interaction) {
+    const day = parseDate(date);
     const shouldUpdateMonth =
       this.props.disableMonthChange === undefined ||
       !this.props.disableMonthChange;
